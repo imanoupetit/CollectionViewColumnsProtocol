@@ -10,8 +10,8 @@ import UIKit
 
 protocol ColumnFlowLayoutable {
     
-    associatedtype FlowLayoutType: UICollectionViewFlowLayout
-    var columnDataSource: ColumnDataSource<FlowLayoutType> { get }
-    var customFlowLayout: FlowLayoutType { get }
+    associatedtype DataSource: ColumnDataSourceable
+    var columnDataSource: DataSource { get }
+    var customFlowLayout: DataSource.FlowLayoutType { get }
     
 }

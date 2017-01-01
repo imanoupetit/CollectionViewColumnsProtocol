@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Columns-->
         <scene sceneID="Zw7-Gy-1vp">
             <objects>
                 <collectionViewController id="mzG-cO-PpZ" customClass="CollectionViewController" customModule="Columns" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,7 +39,7 @@
                             <outlet property="delegate" destination="mzG-cO-PpZ" id="wAe-6A-Wxm"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="bOI-TV-AGA"/>
+                    <navigationItem key="navigationItem" title="Columns" id="bOI-TV-AGA"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3M-PU-nHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

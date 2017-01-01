@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C755C18D1E19C883007294A2 /* ColumnDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C755C18C1E19C883007294A2 /* ColumnDataSourceable.swift */; };
 		C758E35F1E1958FA00BF364A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C758E35E1E1958FA00BF364A /* AppDelegate.swift */; };
 		C758E3611E1958FA00BF364A /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C758E3601E1958FA00BF364A /* CollectionViewController.swift */; };
 		C758E3641E1958FA00BF364A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C758E3621E1958FA00BF364A /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C755C18C1E19C883007294A2 /* ColumnDataSourceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnDataSourceable.swift; sourceTree = "<group>"; };
 		C758E35B1E1958FA00BF364A /* Columns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Columns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C758E35E1E1958FA00BF364A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C758E3601E1958FA00BF364A /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C755C18E1E19C8B8007294A2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C758E3701E19590800BF364A /* ColumnFlowLayoutable.swift */,
+				C755C18C1E19C883007294A2 /* ColumnDataSourceable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		C758E3521E1958FA00BF364A = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +74,8 @@
 				C758E35E1E1958FA00BF364A /* AppDelegate.swift */,
 				C758E3721E19596D00BF364A /* CustomFlowLayout.swift */,
 				C758E3741E195D3000BF364A /* ColumnDataSource.swift */,
-				C758E3701E19590800BF364A /* ColumnFlowLayoutable.swift */,
 				C758E3601E1958FA00BF364A /* CollectionViewController.swift */,
+				C755C18E1E19C8B8007294A2 /* Protocols */,
 				C758E3621E1958FA00BF364A /* Main.storyboard */,
 				C758E3651E1958FA00BF364A /* Assets.xcassets */,
 				C758E3671E1958FA00BF364A /* LaunchScreen.storyboard */,
@@ -147,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C758E3711E19590800BF364A /* ColumnFlowLayoutable.swift in Sources */,
+				C755C18D1E19C883007294A2 /* ColumnDataSourceable.swift in Sources */,
 				C758E3611E1958FA00BF364A /* CollectionViewController.swift in Sources */,
 				C758E3751E195D3000BF364A /* ColumnDataSource.swift in Sources */,
 				C758E3731E19596D00BF364A /* CustomFlowLayout.swift in Sources */,
@@ -314,6 +326,7 @@
 				C758E36F1E1958FA00BF364A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

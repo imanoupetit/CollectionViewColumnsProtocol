@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ColumnDataSource<FlowLayoutType: UICollectionViewFlowLayout>: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class ColumnDataSource<T: UICollectionViewFlowLayout>: NSObject, ColumnDataSourceable {
     
+    typealias FlowLayoutType = T
     let cellsPerRow: Int
     
     init(cellsPerRow: Int) {

@@ -10,9 +10,7 @@ import UIKit
 
 class CustomFlowLayout: UICollectionViewFlowLayout {
     
-    convenience init(minimumInteritemSpacing: CGFloat = 0,
-                     minimumLineSpacing: CGFloat = 0,
-                     sectionInset: UIEdgeInsets = .zero) {
+    convenience init(minimumInteritemSpacing: CGFloat = 0, minimumLineSpacing: CGFloat = 0, sectionInset: UIEdgeInsets = .zero) {
         self.init()
         self.minimumInteritemSpacing = minimumInteritemSpacing
         self.minimumLineSpacing = minimumLineSpacing
