@@ -28,11 +28,11 @@ class ColumnDataSource<T: UICollectionViewFlowLayout>: NSObject, ColumnDataSourc
         return collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
     }
     
-    // MARK: - UICollectionViewDelegateFlowLayout
+    // MARK: - UICollectionViewDelegateFlowLayout via ColumnDataSourceable
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let flowLayout = collectionView.collectionViewLayout as! FlowLayoutType
-        let marginsAndInsets = flowLayout.sectionInset.left + flowLayout.sectionInset.right + flowLayout.minimumInteritemSpacing * (CGFloat(cellsPerRow) - 1)
+        let marginsAndInsets = collectionView.safeAreaInsets.left + collectionView.safeAreaInsets.right + flowLayout.sectionInset.left + flowLayout.sectionInset.right + flowLayout.minimumInteritemSpacing * (CGFloat(cellsPerRow) - 1)
         let itemWidth = (collectionView.bounds.size.width - marginsAndInsets) / CGFloat(cellsPerRow)
         return CGSize(width: itemWidth, height: itemWidth)
     }

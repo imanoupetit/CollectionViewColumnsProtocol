@@ -14,10 +14,11 @@ class CollectionViewController: UICollectionViewController, ColumnFlowLayoutable
     let customFlowLayout = {
         CustomFlowLayout(minimumInteritemSpacing: $0, minimumLineSpacing: $0, sectionInset: UIEdgeInsets(top: $0, left: $0, bottom: $0, right: $0))
     }(10)
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView?.contentInsetAdjustmentBehavior = .always
         collectionView?.collectionViewLayout = customFlowLayout
         collectionView?.dataSource = columnDataSource
         collectionView?.delegate = columnDataSource

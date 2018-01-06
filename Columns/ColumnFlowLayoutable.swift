@@ -9,9 +9,22 @@
 import UIKit
 
 protocol ColumnFlowLayoutable {
-    
+
     associatedtype DataSource: ColumnDataSourceable
     var columnDataSource: DataSource { get }
     var customFlowLayout: DataSource.FlowLayoutType { get }
-    
+
 }
+
+// Also works
+/*
+protocol ColumnFlowLayoutable {
+
+    associatedtype FlowLayoutType
+    associatedtype DataSource where DataSource: ColumnDataSourceable, DataSource.FlowLayoutType == FlowLayoutType
+
+    var customFlowLayout: FlowLayoutType { get }
+    var columnDataSource: DataSource { get }
+
+}
+*/

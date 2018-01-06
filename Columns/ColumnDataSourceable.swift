@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ColumnDataSourceable: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+protocol ColumnDataSourceable: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     associatedtype FlowLayoutType: UICollectionViewFlowLayout
     var cellsPerRow: Int { get }
